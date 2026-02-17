@@ -1,0 +1,45 @@
+name: Build and Release plugin
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Bundle Plugin
+        run: |
+          mkdir logseq-phone-bridge
+          cp dist/index.html logseq-phone-bridge/index.html
+          cp -r dist/assets logseq-phone-bridge/assets
+          if [ -d "dist/icon.svg" ]; then cp dist/icon.svg logseq-phone-bridge/icon.svg; fi
+          cp package.json logseq-phone-bridge/
+          cp README.md logseq-phone-bridge/
+          cp LICENSE logseq-phone-bridge/
+          cp server.js logseq-phone-bridge/
+          cp icon.svg logseq-phone-bridge/
+          
+          # Create zip
+          zip -r logseq-phone-bridge.zip logseq-phone-bridge
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: logseq-phone-bridge.zip
