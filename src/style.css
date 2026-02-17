@@ -1,0 +1,13 @@
+/* Phone Bridge - Plugin Styles */
+/* These styles are minimal since the main UI is injected via logseq.provideUI */
+
+:root {
+  --pb-bg: #1e1e2e;
+  --pb-text: #e0e0ff;
+  --pb-muted: #8888aa;
+  --pb-accent: #6478ff;
+}
+
+#app {
+  display: none;
+}

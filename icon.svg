@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1e2e"/>
+      <stop offset="100%" style="stop-color:#6478ff"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#6478ff"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="256" height="256" rx="48" fill="url(#bg)"/>
+  <!-- Phone outline -->
+  <rect x="85" y="50" width="86" height="156" rx="14" fill="none" stroke="url(#glow)" stroke-width="5" opacity="0.9"/>
+  <rect x="113" y="56" width="30" height="4" rx="2" fill="#8b5cf6" opacity="0.6"/>
+  <circle cx="128" cy="192" r="6" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.5"/>
+  <!-- Image icon on phone screen -->
+  <rect x="100" y="85" width="56" height="45" rx="6" fill="rgba(100,120,255,0.2)" stroke="#6478ff" stroke-width="2"/>
+  <circle cx="113" cy="97" r="5" fill="#8b5cf6" opacity="0.7"/>
+  <polyline points="100,125 118,107 135,120 145,112 156,125" fill="none" stroke="#6478ff" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- WiFi/signal waves -->
+  <path d="M128,145 Q110,160 92,175" fill="none" stroke="url(#glow)" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+  <path d="M128,145 Q146,160 164,175" fill="none" stroke="url(#glow)" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+  <path d="M128,152 Q115,163 102,175" fill="none" stroke="url(#glow)" stroke-width="2.5" opacity="0.35" stroke-linecap="round"/>
+  <path d="M128,152 Q141,163 154,175" fill="none" stroke="url(#glow)" stroke-width="2.5" opacity="0.35" stroke-linecap="round"/>
+  <!-- Sparkle dots -->
+  <circle cx="70" cy="80" r="3" fill="#6478ff" opacity="0.4"/>
+  <circle cx="186" cy="100" r="2.5" fill="#8b5cf6" opacity="0.5"/>
+  <circle cx="60" cy="170" r="2" fill="#6478ff" opacity="0.3"/>
+  <circle cx="196" cy="160" r="3" fill="#8b5cf6" opacity="0.3"/>
+</svg>

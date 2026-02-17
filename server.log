@@ -1,0 +1,17 @@
+
+  📱 Phone Bridge Server
+  ─────────────────────────────
+  HTTPS (Phone):   https://0.0.0.0:8083
+  Network:         https://10.17.51.17:8083
+  Network:         https://100.105.93.44:8083
+  Network:         https://172.20.0.1:8083
+  HTTP (Plugin):   http://127.0.0.1:8084
+  Graph:           /home/diro_1/logseq
+
+[Signaling] receiver connected to session pb-z8t4qatd (http)
+[Signaling] sender connected to session pb-z8t4qatd (https)
+[Phone Bridge] Saved: /home/diro_1/logseq/graphs/archetypes/assets/phone-bridge_1771305442253_17713054353854066675225192789411.jpg (787038 bytes)
+[Signaling] receiver disconnected from pb-z8t4qatd
+[Signaling] sender disconnected from pb-z8t4qatd
+[Signaling] sender connected to session pb-z8t4qatd (https)
+[Signaling] sender disconnected from pb-z8t4qatd
