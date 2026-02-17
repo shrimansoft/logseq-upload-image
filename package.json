@@ -1,7 +1,7 @@
 {
   "name": "logseq-phone-bridge",
   "version": "1.0.0",
-  "description": "Transfer images from your phone to Logseq via WebRTC",
+  "description": "Transfer images from phone to Logseq locally via WebRTC/SSE (No Internet Required)",
   "main": "dist/index.html",
   "logseq": {
     "id": "logseq-phone-bridge",
@@ -11,8 +11,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "serve-sender": "npx -y serve sender -l 8083 --cors"
+    "build": "vite build"
   },
   "dependencies": {
     "@logseq/libs": "^0.0.17",
